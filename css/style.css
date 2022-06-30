@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+}
+
+#about {
+    background-image: url("img/bg_img_homepage.jpg");
+    background-repeat: none;
+    opacity: 0.7;
+}
+
+.mobile-menu {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    display: block;
+  }
