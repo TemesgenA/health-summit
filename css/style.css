@@ -401,7 +401,7 @@ body {
   text-align: center;
 }
 
-.branding h2 strong {
+.branding h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
