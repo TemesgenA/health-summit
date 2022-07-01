@@ -3,8 +3,8 @@ const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenu = document.querySelector('.nav-menu-mobile');
 
 mobileMenuBtn.addEventListener('click', () => {
-    mobileMenuBtn.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
+  mobileMenuBtn.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
 });
 
 document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
@@ -12,7 +12,7 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   mobileMenu.classList.remove('active');
 }));
 
-// Featured speakers to be loaded using dynamic html 
+// Featured speakers to be loaded using dynamic html
 const featuredSpeakers = [
   {
     id: 1,
