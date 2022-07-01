@@ -521,7 +521,6 @@ body {
   /* Mobile menu button and its animations */
   .mobile-menu-btn {
     display: block;
-    position: fixed;
     background-color: transparent;
     width: 20px;
     height: 20px;
