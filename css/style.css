@@ -281,25 +281,30 @@ body {
   border-top: 1px solid #000;
 }
 
-.speaker-photo {
+.speaker-photo-container {
+  width: 150px;
+  height: 150px;
+}
+
+.speaker-photo-bg {
   background-color: #eee;
   background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
   linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
   background-size: 20px 20px;
   background-position: 0 0, 30px 30px;
+  background-blend-mode: soft-light;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 140px;
-  height: 140px;
-  background-blend-mode: hard-light;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: content-box;
+  width: 60%;
+  height: 60%;
 }
 
-.speaker-photo img {
-  padding-left: 50px;
-  padding-top: 50px;
-  width: 150px;
-  height: auto;
+.speaker-photo-container img {
+  width: 130px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 /* Partners sub-section style */
@@ -543,7 +548,7 @@ body {
     font-size: 32px;
     line-height: 44px;
     display: block;
-    color: white;
+    color: #272a31;
     text-decoration: none;
   }
 
