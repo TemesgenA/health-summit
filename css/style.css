@@ -1,8 +1,10 @@
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 body {
   background-color: #fff;
   margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Navigation bar style */
@@ -60,19 +62,19 @@ body {
   flex-direction: column;
   justify-content:space-between;
   background-color: rgb(241, 233, 233);
-  background-image: url("/img/bg_img_homepage.jpg");
+  background-image: url("../img/bg_img_homepage.jpg");
   background-blend-mode: soft-light;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: auto;
-  padding-top: 100px;
+  padding-top: 0;
 }
 
 .home-content {
   display: flex;
   flex-direction: column;
-  padding-left: 10%;
+  padding: 10% 10%;
   width: 70%;
 }
 
@@ -169,6 +171,7 @@ body {
 
 .main-program p {
   padding: 0 10px;
+  font-family: 'Lato', sans-serif;
 }
 
 .main-program div {
@@ -287,12 +290,14 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 160px;
-  height: 160px;
-  background-blend-mode: soft-light;
+  width: 140px;
+  height: 140px;
+  background-blend-mode: hard-light;
 }
 
 .speaker-photo img {
+  padding-left: 50px;
+  padding-top: 50px;
   width: 150px;
   height: auto;
 }
@@ -326,29 +331,48 @@ body {
 .intro {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   background-color:whitesmoke;
-  background-image: url("/img/mobile-bg.png");
+  background-image: url("../img/mobile-bg.png");
   background-repeat: no-repeat;
+  background-size:cover;
   height: auto;
-  padding: 10%;
+  padding: 5% 20%;
+  text-align: center;
 }
 
 .intro h1 {
   color: #ec5242;
+
+}
+.intro-p1 {
+  color: #ec5242;
   font-family: 'Lato', sans-serif;
   font-size: 60px;
+  font-weight: bold;
+}
+
+.intro-p2 {
+  background-color: #fff;
+  padding: 5%;
+}
+
+.intro-p3 {
+  font-size: 24px;
+
 }
 
 .branding {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #fff;
   border: 1px solid whitesmoke;
   height: auto;
   padding: 10%;
+  text-align: center;
 }
 
 .branding h2 strong {
@@ -360,6 +384,8 @@ body {
 
 .branding img {
   width: 200px;
+  border: 1px solid whitesmoke;
+  padding: 2em;
 }
 
 .previous-summit {
@@ -386,7 +412,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ec5242;
-  background-image: url("/img/2018-summit.jpg");
+  background-image: url("../img/2018-summit.jpg");
   width: 400px;
   height: 300px;
   background-repeat: no-repeat;
@@ -402,7 +428,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ec5242;
-  background-image: url("/img/2020-summit.jpg");
+  background-image: url("../img/2020-summit.jpg");
   width: 400px;
   height: 300px;
   background-repeat: no-repeat;
@@ -431,24 +457,50 @@ body {
   color: #000;
 }
 
+.footer-about {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  align-items: center;
+  background-color: #272a31;
+  height: 200px;
+  gap: 40px;
+}
+
+.footer-about {
+  color: #d3d3d3;
+}
 
 @media screen and (max-width: 768px) {
   .nav {
     display: none;
   }
 
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    width: 80%;
+    padding-top: 100px;
+  }
+
+  .home-content h1 {
+    padding-top: 5px;
+  }  
+
   /* Mobile menu button and its animations */
   .mobile-menu-btn {
     display: block;
     position: fixed;
-    top: 0;
     background-color: transparent;
     width: 20px;
     height: 20px;
     padding: 5%;
+    z-index: 999;
   }
+  
 
-  .mobile-menu-btn .bar {
+  .bar {
     display: block;
     position: relative;
     width: 30px;
@@ -458,13 +510,29 @@ body {
     background-color: #272a31;
   }
 
-  .nav-menu li {
+  .nav-menu-mobile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+    transition: 0.3s ease-in-out;
+    text-align: left;
+    width: 100vw;
+    height: 100vh;
+    gap: 60px;
+    left: 10%;
+    list-style-type: none;
+    display: none;
+  }
+
+  /* .nav-menu li {
     position: relative;
     top: 40px;
     font-size: 30px;
     display: block;
     gap: 40px;
-  }
+    text-decoration: none;
+  } */
 
   .nav-link {
     position: relative;
@@ -476,34 +544,13 @@ body {
     line-height: 44px;
     display: block;
     color: white;
+    text-decoration: none;
   }
-
-  .home-content {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5%;
-    width: 80%;
-  }
-
-  .home-content h1 {
-    padding-top: 5px;
-  }
-  
 
   /* Action when mobile menu button (humbergur is clicked/taped) */
-  .nav-menu.active {
-    background: #f3bbbb;
-    mix-blend-mode: multiply;
-    inset: 0 0 0 0;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(0.75em);
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin: 0;
-  }
-
-  .nav-link.active {
+  /* .nav-link.active {
+    position: relative;
+    top: 40px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -511,15 +558,17 @@ body {
     line-height: 44px;
     display: block;
     align-items: center;
-    color: #fff;
+    color: #d3d3d3;
     padding: 10rem 1rem;
-  }
-
+    text-decoration: none;
+  } */
+  
   .mobile-menu-btn.active span:nth-of-type(1) {
     transform: rotate3d(0, 0, 1, 45deg);
     position: fixed;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
     background: #272a31;
   }
 
@@ -531,8 +580,22 @@ body {
     transform: rotate3d(0, 0, 1, -45deg);
     position: fixed;
     margin: 0;
+    margin-top: 10px;
+    margin-left: 5px;
     background: #272a31;
-    margin-top: 20px;
+  }
+
+  .nav-menu-mobile.active {
+    padding-top: 10%;
+    background: #f3bbbb;
+    mix-blend-mode: multiply;
+    inset: 0 0 0 0;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(0.75em);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0;
   }
 
   .main-program-container {
@@ -585,5 +648,15 @@ body {
   .footer {
     height: auto;
     flex-direction: column;
+  }
+
+  .intro {
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-menu-mobile {
+    display: none;
   }
 }

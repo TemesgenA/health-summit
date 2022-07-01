@@ -1,5 +1,5 @@
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const mobileMenu = document.querySelector('.nav-menu');
+const mobileMenu = document.querySelector('.nav-menu-mobile');
 
 mobileMenuBtn.addEventListener('click', () => {
     mobileMenuBtn.classList.toggle('active');
