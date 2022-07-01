@@ -12,7 +12,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   background-color: whitesmoke;
   width: 100%;
   height: auto;
@@ -178,49 +177,19 @@ body {
   background-color: #4d4c4c9a;
 }
 
-.M8Aliance {
+.main-program-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 200px;
   height: 240px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-.div2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 240px;
-}
-
-.div3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 240px;
-}
-
-.div4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 240px;
-}
-
-.div5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 240px;
+.main-program-card:hover  {
+  border: 1px solid whitesmoke;
 }
 
 /* Home section featured speakers sub section style */
@@ -533,6 +502,10 @@ body {
     display: none;
   }
 
+  .social {
+    display: none;
+  }
+
   .home-content {
     display: flex;
     flex-direction: column;
@@ -582,15 +555,6 @@ body {
     display: none;
   }
 
-  /* .nav-menu li {
-    position: relative;
-    top: 40px;
-    font-size: 30px;
-    display: block;
-    gap: 40px;
-    text-decoration: none;
-  } */
-
   .nav-link {
     position: relative;
     top: 40px;
@@ -603,22 +567,6 @@ body {
     color: #272a31;
     text-decoration: none;
   }
-
-  /* Action when mobile menu button (humbergur is clicked/taped) */
-  /* .nav-link.active {
-    position: relative;
-    top: 40px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
-    display: block;
-    align-items: center;
-    color: #d3d3d3;
-    padding: 10rem 1rem;
-    text-decoration: none;
-  } */
   
   .mobile-menu-btn.active span:nth-of-type(1) {
     transform: rotate3d(0, 0, 1, 45deg);
@@ -644,7 +592,7 @@ body {
 
   .nav-menu-mobile.active {
     padding-top: 10%;
-    background: #f3bbbb;
+    background: #f3d9d9;
     mix-blend-mode: multiply;
     inset: 0 0 0 0;
     background-repeat: no-repeat;
@@ -668,7 +616,7 @@ body {
     align-items: center;
   }
 
-  .main-program-mobile {
+  .main-program-card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -715,6 +663,29 @@ body {
 @media screen and (min-width: 768px) {
   .nav-menu-mobile {
     display: none;
+  }
+
+  .social ul {
+    display: flex;
+    justify-content: end;
+    background-color: #414246;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .social li:last-child {
+    margin-right: 150px;
+  }
+
+  .social ul li:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .social a {
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
   }
 
   #featured-speakers .speaker {
