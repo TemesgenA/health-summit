@@ -60,6 +60,10 @@ body {
   color: #ec5242;
 }
 
+.nav-menu a:hover {
+  color: #ec5242;
+}
+
 /* Home section style */
 .home-section {
   display: flex;
