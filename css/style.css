@@ -324,11 +324,13 @@ body {
 
 #featured-speakers .speaker .right h3 {
   color: #272a31;
+  font-family: 'Lato', sans-serif;
 }
 
 #featured-speakers .speaker .right p {
   color: #272a31;
   font-size: 16px;
+  font-family: 'Lato', sans-serif;
 }
 
 #featured-speakers .speaker .right .subtitle {
@@ -336,6 +338,7 @@ body {
   font-size: 14px;
   color: #ec5242;
   margin: 4px 0;
+  font-family: 'Lato', sans-serif;
 }
 
 #featured-speakers .separator {
