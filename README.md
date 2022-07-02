@@ -1,40 +1,18 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# World Health Summit
 
-# Project Name
-
-> Description the project.
+> This is aconference website developed for the World Health Summit.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JavaScript
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://temesgena.github.io/health-summit/)
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
 
 ### Author
 
@@ -44,11 +22,6 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@Temesgen_Ayneka](https://twitter.com/Temesgen_Ayneka)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/temesgen-ayneka/)
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -62,3 +35,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+["CC Global Summit 2015 UI"](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) design by Cindy Shin is licensed under CC BY-ND 2.0.
